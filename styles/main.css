@@ -1,48 +1,71 @@
 .start-panel {
-
+    display: grid;
+grid-template-columns:  60px 150px auto;
+gap: 10px;
 }
 .start-panel__icons {
+    display: grid;
+grid-template-rows: 1fr;
 
 }
 .start-panel__grid {
-
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto;
+grid-template-areas: 
+"office zabava"
+"internet zabava";
+align-content: start;
+gap: 10px;
 }
 .apps--office {
-
+grid-area: office;
 }
 .apps--web {
-
+grid-area: internet;
 }
 .apps--other {
-
+grid-area: zabava;
 }
 .apps__grid {
-
+display: grid;
+grid-template-columns: repeat(6, 50px);
+grid-auto-columns: 60px;
+grid-auto-rows: 60px;
+gap: 10px;
 }
 .app--g2x2 {
-
+grid-row-end: span 2;
+grid-column-end: span 2;
 }
 .app--g2x1 {
-
+    grid-row-end: span 2;
+    grid-column-end: span 2;
 }
 .app--g1x2 {
-
+    grid-row-end: span 2;
+    grid-column-end: span 2;
 }
 .app--off-3 {
-
+    grid-column-start: 3;
 }
 .app--off-4 {
+grid-column-start: 5;
 
 }
 .app--off-5 {
-
+    grid-column-start: 5;
+    grid-row-end: 1;
 }
 .app--in-3 {
-
+    grid-column-start: 3;
+    grid-row-end: 1;
 }
 .app--fun-2 {
-
+    grid-column-start: 3;
+    grid-row-end: 3;
 }
 .app--fun-3 {
-
+    grid-column-start: 5;
+    grid-row-end: 4;
 }
